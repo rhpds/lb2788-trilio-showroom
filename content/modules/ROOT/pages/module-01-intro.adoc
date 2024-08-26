@@ -1,4 +1,4 @@
-= Backup and Restore for Red Hat OpenShift Virtualization with Trilio
+= Backup and Recovery of Red Hat OpenShift Virtualization VMs using Trilio
 
 == Introduction
 
@@ -37,8 +37,8 @@ Your OpenShift cluster console is available {openshift_console_url}[here^].
 
 Console login is available with:
 
-* *User:* {trilio_user}1
-* *Password:* {trilio_password}
+* *User:* {user}
+* *Password:* {password}
 
 [IMPORTANT]
 .Trilio Openshift Operator

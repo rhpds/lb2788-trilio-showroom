@@ -22,6 +22,10 @@ image::restore-restore-complete.png[]
 When the restore is complete, we want to ensure that our restore contains all the files we persisted in the backup.
 
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, ensure the project *vmrestored* is selected.
+. Notice that the Virtual Machines have been restored in your new OpenShift Project.
++
+image::restore-vm-running.png[]
++
 . Click on *winweb01*
 . Click on the *console* tab
 . On the VNC console, enter *15* and hit *enter*

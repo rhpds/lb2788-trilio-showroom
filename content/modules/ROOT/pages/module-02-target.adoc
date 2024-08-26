@@ -6,7 +6,7 @@ A Trilio Target is a Kubernetes resource that defines the backup repository loca
 
 == Virtual Machines
 
-. Login to your {openshift_console_url}[OpenShift Console^] with user *{trilio_user} and password {trilio_password}.
+. Login to your {openshift_console_url}[OpenShift Console^] with user *{user} and password {password}.
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, select the project *vmimported*
 +
 image::target-vmimported-vms.png[]
@@ -25,7 +25,7 @@ In order for Trilio to upload the files to this location, it will require login 
 . For *Value* enter *minio*
 . Click on *Add key/value*
 . For the second *Key* enter *secretKey*
-. And for the *Value* enter *{trilio_password}*
+. And for the *Value* enter *{password}*
 . Click *Create*
 
 == Create the Backup Target\
