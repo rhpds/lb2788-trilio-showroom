@@ -28,7 +28,7 @@ In order for Trilio to upload the files to this location, it will require login 
 . And for the *Value* enter *{password}*
 . Click *Create*
 
-== Create the Backup Target\
+== Create the Backup Target
 Now that you have the credentials to your target location, you can being creating the Backup Target.
 
 . On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *vmimported*.
