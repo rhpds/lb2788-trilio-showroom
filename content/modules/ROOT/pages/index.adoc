@@ -1,108 +1,44 @@
-= Welcome to {lab_name}!
+Welcome to the Backup and Restore for Red Hat OpenShift Virtualization with Trilio Demo!
 
-[%hardbreaks]
 == Introduction
-OpenShift Virtualization enables you to bring virtual machines onto a modern, Kubernetes-based infrastructure. It enables the development and delivery of new applications as well as the modernization of existing ones and can create applications that consist of virtual machines, containers, and serverless functions - all managed together using Kubernetes-native tools and paradigms.
+This repository hosts the lab guide for the Welcome to the Backup and Restore for Red Hat OpenShift Virtualization with Trilio, which can be delivered by Red Hat Associates to customers and interested parties all over the world.
 
-This roadshow event is organized to allow you to have a hands-on experience with Red Hat OpenShift Virtualization.
+It is designed to work with the Showroom lab environment provided by the Red Hat Demo Platform (RHDP) team.
 
-In this event we will explore many common management activities that virtualization administrators often encounter in their day to day workflows.
+This demo is organized to allow you to have a hands-on experience with Backup and Restore using Trilio for Red Hat OpenShift Virtualization.
+
+Trilio is a leader in cloud-native data protection for Kubernetes, KubeVirt and OpenStack environments. Trilio technology is trusted by cloud infrastructure operators, the largest telco providers, and developers for backup and recovery, migration and application mobility.
+
+Customers in telecom, defense, automotive and financial services leverage Trilio to recover from disasters, migrate workloads, move workloads to new infrastructure and migrate to new software distributions.
+
+In this demo we will explore many common management activities that virtual administrators often encounter in their day to day workflows.
 
 == Who Will Benefit Most from attending a Roadshow?
 
-*Virtual Machine Administrators* -- Those responsible for day to day management of virtual guests in OpenShift Virtualization. These users will often find themselves responsible for provisioning virtual guests, and day to day management of the guests, and the applications running within.
+*Virtual Machine Administrators* -- Those responsible for day to day management of virtual guests in OpenShift Virtualization. These users will often find themselves responsible for backup up and restoring virtual guests and the applications running within.
 
-*Virtual Infrastructure Administrators* -- Those responsible for the physical infrastructure hosting the OpenShift Virtualization solution. These users will be responsible for physical hardware, storage, and networking changes to the environment, that will affect the day to day operations of the running virtual machines.
+*Virtual Infrastructure Administrators* -- Those responsible for the physical infrastructure hosting the Backup targets. These users will be responsible for physical hardware, storage, and networking changes to the environment, that will esnure the successful restoration of virtual machine resources.
+
 
 == What Content Is Covered In The Roadshow?
 
-// These are the *eight* main sections that will be covered:
-These are the *six* main sections that will be covered:
+These are the *eight* main sections that will be covered:
 
-* _Virtual Machine Management_: In this section we will provide a review of virtual machine management fundamentals, including creating a virtual machine, and modifying it's allotted resources.
+* _Operator Installation_: In this section we will explore the Trilio operator for Openshift as well as creating a Trilio Vault Manager instance.
 
-* _Migrating Existing Virtual Machines_: In this section, we will use the Migration Toolkit for Virtualization (MTV) to migrate a VM from an existing VMware vSphere environment to OpenShift Virtualization.
+* _Creating Targets_: In this section, you will create your own Trilio Targets used to define storage for your backups.
 
-// * _Bare Metal Infrastructure Management_: In this section, an administrator will learn how to scale their OpenShift environment by adding in an additional worker node to host virtualized workloads.
+* _Creating Backup Plans_: In this section, an administrator will learn how to create a backup plan and creating backups on a schedule.
 
-* _Storage Management_: The storage paradigm familiar to many administrators changes with OpenShift Virtualization. This section will explore many actions related to storage management for virtual machines.
+* _Creating Restores_: In this sectin, an administrator will learn how to restore a previous back up.
 
-* _Backup and Recovery for Virtual Machines_: This unit introduces and demonstrates additional concepts around backing up VMs to external sites and restoring them in the event of a disaster.
+== Version Information
 
-// * _Network Management_: By default VMs are connected to the pod network in OpenShift. In this section we will explore creating new L2 network mappings, and configuring microsegmentation policies for multiple networks.
+This edition of the  OpenShift Virtualization Roadshow has been developed using the following software versions:
 
-* _Template and InstanceType Management_: In order to streamline deployment of virtual machines, administrators will often create Templates or define InstanceTypes to ease deployment operations. This section will focus on those processes.
+* Red Hat OpenShift 4.16
+* Red Hat OpenShift Virtualization 4.16
+* Red Hat OpenShift Data Foundation 4.16
+* Red Hat OADP 1.4
+* Trilio 4.0.x
 
-* _Working with Virtual Machines and Applications_: In this section we will perform several day-2 activities with our imported virtual machines, including setting up a load-balancer, and exposing our VM hosted applications through services and routes.
-
-== What is OpenShift Virtualization?
-
-* OpenShift Virtualization is a feature of Red Hat OpenShift; it is not an add-on or a separate product and is included with all entitlements.
-* All current subscribers receive OpenShift Virtualization as part of their OpenShift subscription. It has been generally available since OpenShift 4.5.
-* OpenShift Virtualization is based on the “container-native virtualization” technology being developed upstream under the KubeVirt project, a sandbox project in the Cloud Native Computing Foundation (CNCF).
-* It leverages the Red Hat Enterprise Linux KVM hypervisor (RHEL KVM), which is a mature and highly performant open-source hypervisor used by many organizations and cloud service providers globally and which has been under development for over 15 years.
-* OpenShift Virtualization leverages the RHEL KVM hypervisor and allows the VM to be managed by Kubernetes and KubeVirt. An OpenShift Virtualization VM uses Kubernetes scheduling, network, and storage infrastructure.
-* OpenShift Virtualization includes entitlements for **unlimited virtual RHEL guests**. Guest licensing for other supported operating systems will need to be purchased separately.
-* OpenShift Virtualization is SVVP certified with Microsoft for Windows guest support per the same rules that apply to Red Hat’s other KVM virtualization offerings.
-* OpenShift Virtualization is currently only supported on bare metal physical servers, typically on-premises or through dedicated hosting. Support for other topologies (OpenShift deployed on virtualized infrastructure like RHV or vSphere) is not available at this time.
-* Support for https://www.redhat.com/en/blog/managing-virtual-machines-and-containers-as-code-with-openshift-virtualization-on-red-hat-openshift-service-on-aws[AWS / ROSA^] has already been announced, and we are in the process of adding support for OpenShift Virtualization to additional Managed OpenShift Cloud services.
-* OpenShift Virtualization allows OpenShift to deploy, manage, and connect virtual machines to an OpenShift cluster. This includes the ability to connect to and manage those VMs using Kubernetes-native methods and take advantage of OpenShift features like Pipelines, GitOps, Service Mesh, and more.
-
-== Why switch from a traditional VM platform?
-
-**Adopt cloud-native development and/or cloud-native operations:**
-Red Hat OpenShift helps your team build applications with speed, agility, confidence, and choice. Code in production mode, anywhere you choose to build. Get back to doing work that matters.
-
-**Complete app dev stack:**
-Red Hat OpenShift Dev Spaces (formerly Red Hat CodeReady Workspaces), Runtimes, Integration and Process Automation, Serverless, Pipelines, and more with security throughout.
-
-**Shift infrastructure spend to innovation:**
-OpenShift native architecture changes the heavyweight cost structure from SDDC legacy to lightweight container-native frameworks.
-
-**Risk mitigation:**
-With OpenShift support for on-premises and public cloud options, OpenShift is insurance against public cloud lock-in.
-
-**Independent from infrastructure:**
-Red Hat OpenShift runs consistently on bare metal, on-premises virtualization, or public cloud for ultimate choice and flexibility of deployment and updates.
-
-**Pure open source innovation:**
-The innovation in Kubernetes, serverless, service mesh, Kubernetes Operators, and more powered by the velocity of open source, with Red Hat in the lead.
-
-== Next steps
-
-If you would like to learn more about OpenShift Virtualization, please visit the https://www.redhat.com/en/technologies/cloud-computing/openshift/virtualization[landing page^], review the https://docs.openshift.com/container-platform/latest/virt/about_virt/about-virt.html[documentation^], or view some of our demo videos on https://www.youtube.com/playlist?list=PLaR6Rq6Z4IqeQeTosfoFzTyE_QmWZW6n_[YouTube^].
-
-== Requirements for the Lab Environment
-
-* Participant needs to have their own computer with browser and internet access.
-* Chromium based browsers are recommended as some copy/paste functions don't work in Firefox for the time being.
-* Remote access console uses the US keyboard layout by default, so it's good to know where special characters reside for other country's layouts, or to use the copy/paste function in a supported browser.
-
-=== Credentials for the OpenShift Console
-
-Your OpenShift cluster console is available {openshift_cluster_console_url}[here^].
-
-Administrator login is available with:
-
-* *User:* {openshift_cluster_admin_username}
-* *Password:* {openshift_cluster_admin_password}
-
-////
-=== Command Line Access
-
-To the right you see a Terminal window. Out of the box you are logged in as a service account - that can't do much. However you can log into OpenShift as the cluster administrator using the following command (hit `y` when prompted if you want to connect to an insecure server):
-
-[source,sh,subs="attributes",role=execute]
-----
-oc login -u {openshift_cluster_admin_username} -p {openshift_cluster_admin_password} {openshift_api_server_url}
-----
-////
-
-=== vCenter Access
-
-In the migration chapter of the lab, you will be asked to login and examine a https://{vcenter_console}[VMware vSphere^] environment.
-
-For access, please use the following credentials:
-
-* *vcenter_user:* {vcenter_full_user}
-* *vcenter_password:* {vcenter_password}

@@ -1,0 +1,40 @@
+= Creating a Restore
+
+== Introduction
+
+A Trilio Restore is a Kubernetes resource that restores a backup in the same or different namespace.
+
+== Create the Restore
+To restore a backup into a new namespace:
+
+. On the left menu, click on *Home -> Projects* and click the *Create Project* button.
+. For *Name* ebter *vmrestored* and click *Create*
+. On the left menu, click on *Trilio Backups -> Restores* and ensure the project is selected as *vmrestored*
+. Click on the *Create Restore* button
+. On the *Restore a backup* form, select *backup-1* from the list and click *Next*
+. Enter *vmrestored* in the *Search by name...* field and ensure it is selected and click *Next*
+. For *Restore Name* enter *restore-1* and click *Create*
+. Once the *Restore a backup* form is submitted, you will be redirected to the *Restores* landing page. When the status for *restore-1* shows as *Available*, your restore is complete.  This process may take a few minutes.
++
+image::restore-restore-complete.png[]
+
+== Validating the Restore
+When the restore is complete, we want to ensure that our restore contains all the files we persisted in the backup.
+
+. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, ensure the project *vmrestored* is selected.
+. Click on *winweb01*
+. Click on the *console* tab
+. On the VNC console, enter *15* and hit *enter*
++
+image::backup-vnc-console.png[]
++
+. Run the below command to ensure that the file you created previously is available in the restored Virtual Machine.
++
+[source,sh,role=execute]
+----
+cat .\backup-file.txt
+----
++
+image::restore-backup-file-valid.png[]
++
+. You have successfully restored a backup to a new namespace using Trilio.

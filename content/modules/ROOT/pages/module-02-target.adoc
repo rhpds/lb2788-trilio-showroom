@@ -1,0 +1,50 @@
+= Creating a Backup Target
+
+== Introduction
+
+A Trilio Target is a Kubernetes resource that defines the backup repository location used to store the backup files.  This location can be defined as an *Network File System (NFS)* or an *Object Store* such AWS, MinIO etc.  In this section of the demo, we will attempt to create a Backup Target which will host all backup files for the *vmimported* namespace.
+
+== Virtual Machines
+
+. Login to your {openshift_console_url}[OpenShift Console^] with user *{trilio_user} and password {trilio_password}.
+. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, select the project *vmimported*
++
+image::target-vmimported-vms.png[]
++
+There are 3 Virtual Machines that are displayed.  These will be backed up and restored to another namespace.
+. Our Target will be set up to store backed up files on a MinIO S3 location.
+
+== Create the S3 Credentials Secret for the Backup Target
+
+In order for Trilio to upload the files to this location, it will require login credentials, created as a Kubernetes secret, in the namespace we are trying to backup:
+
+. On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *vmimported*.
+. Click on the *Create* button and select *Key/value secret*
+. For *Secret name* enter *mino-s3-login*
+. For *Key* enter *accessKey*
+. For *Value* enter *minio*
+. Click on *Add key/value*
+. For the second *Key* enter *secretKey*
+. And for the *Value* enter *{trilio_password}*
+. Click *Create*
+
+== Create the Backup Target\
+Now that you have the credentials to your target location, you can being creating the Backup Target.
+
+. On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *vmimported*.
+. Click the *Create Target* button. You will be presented with a *Create Target* form.
++
+image::target-create-target-form.png[]
+. For *Namespace*, select *vmimported*
+. For *Name*, enter *target-1*
+. Ignore the *Threshold Capacity* as this is not required for the demo.
+. For *Vendor details*, select *Object Store*
+. For *Vendor*, select *MinIO*
+. For *Secrets*, select *minio-s3-login* which you just created.
+. For *Bucket Name*, enter *trilio-storage*.  This bucket has already been created for you on MinIO.
+. Ignore *Region*
+. For *URL*, enter *http://minio.minio.svc.cluster.local:9000*
+. Click *Submit*
+. Once the *Create Target* form is submitted, you will be redirected to the *Targets* landing page.  once the status for *target-1* shows *Available*, your target is successfully created.
++
+image::target-target-created.png[]

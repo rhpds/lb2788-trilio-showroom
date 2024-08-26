@@ -1,13 +1,13 @@
 ---
 name: modules
-title: Experience OpenShift Virtualization
+title: Backup and Restore for Red Hat OpenShift Virtualization with Trilio
 version: master
 nav:
 - modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
-    lab_name: Experience OpenShift Virtualization
+    lab_name: Backup and Restore for Red Hat OpenShift Virtualization with Trilio
     release-version: master
     page-pagination: true
   page-links:

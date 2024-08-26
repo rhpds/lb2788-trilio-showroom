@@ -1,6 +1,6 @@
 ---
 site:
-  title: "Experience Red Hat OpenShift Virtualization"
+  title: "Backup and Restore for Red Hat OpenShift Virtualization with Trilio"
   start_page: modules::index.adoc
 
 content:
