@@ -6,7 +6,7 @@ A Trilio Target is a Kubernetes resource that defines the backup repository loca
 
 == Virtual Machines
 
-. Login to your {openshift_console_url}[OpenShift Console^] with user *{user} and password {password}.
+. Login to your https://{openshift_console_url}[OpenShift Console^] with user *{user}* and password *{password}*.
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, select the project *vmimported*
 +
 image::target-vmimported-vms.png[]

@@ -14,7 +14,7 @@ To restore a backup into a new namespace:
 . On the *Restore a backup* form, select *backup-1* from the list and click *Next*
 . Enter *vmrestored* in the *Search by name...* field and ensure it is selected and click *Next*
 . For *Restore Name* enter *restore-1* and click *Create*
-. Once the *Restore a backup* form is submitted, you will be redirected to the *Restores* landing page. When the status for *restore-1* shows as *Available*, your restore is complete.  This process may take a few minutes.
+. Once the *Restore a backup* form is submitted, you will be redirected to the *Restores* landing page. When the status for *restore-1* shows as *Completed*, your restore is complete.  This process may take a few minutes.
 +
 image::restore-restore-complete.png[]
 

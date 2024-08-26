@@ -4,6 +4,8 @@
 
 Trilio for Red Hat OpenShift provides fast and easy backup of application containers and virtual machines, disaster and ransomware recovery and application mobility across any cluster, anywhere. Trilio gives you the power and flexibility to backup your entire cluster or select a specific namespace(s), label, Helm chart, or Operator as the scope for your backup operations, while minimizing resources consumption by utilizing Incremental Backups, selective workload recovery and more.  Trilio’s solution allows users to seamlessly backup & recover, upgrade, and migrate workloads, while providing real-time reporting for SLA-based service continuity and Operational Resiliency.
 
+image::intro-trilio-arch.png[]
+
 === Integrated Data Protection for OpenShift
 Trilio has been enhanced for Red Hat OpenShift environments:
 

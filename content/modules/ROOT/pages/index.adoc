@@ -22,7 +22,7 @@ In this demo we will explore many common management activities that virtual admi
 
 == What Content Is Covered In The Roadshow?
 
-These are the *eight* main sections that will be covered:
+These are the *four* main sections that will be covered:
 
 * _Operator Installation_: In this section we will explore the Trilio operator for Openshift as well as creating a Trilio Vault Manager instance.
 
