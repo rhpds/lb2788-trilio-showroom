@@ -52,5 +52,6 @@ For information relating to the installation of Trilio, please refer the the fol
 * https://docs.trilio.io/kubernetes/getting-started/red-hat-openshift[Getting Started with Trilio on Red Hat OpenShift (OCP)^]
 
 *References:*
+
 * https://catalog.redhat.com/software/container-stacks/detail/5ec3fa9528834587a6b85c26[Trilio for OpenShift]
 ====

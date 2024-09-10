@@ -20,7 +20,7 @@ In order for Trilio to upload the files to this location, it will require login 
 
 . On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *vmimported*.
 . Click on the *Create* button and select *Key/value secret*
-. For *Secret name* enter *mino-s3-login*
+. For *Secret name* enter *minio-s3-login*
 . For *Key* enter *accessKey*
 . For *Value* enter *minio*
 . Click on *Add key/value*
@@ -48,3 +48,9 @@ image::target-create-target-form.png[]
 . Once the *Create Target* form is submitted, you will be redirected to the *Targets* landing page.  once the status for *target-1* shows *Available*, your target is successfully created.
 +
 image::target-target-created.png[]
+
+[TIP]
+.Target Creation Progress
+====
+To monitor the progress of creating your target, you can view the *tvk-target-validation...* pod logs in the *trilio-system* namespace.
+====

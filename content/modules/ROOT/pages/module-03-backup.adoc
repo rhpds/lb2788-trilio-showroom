@@ -18,7 +18,7 @@ image::backup-vnc-console.png[]
 +
 . Run the below commands to create a file on the virtual machine and verify it has been created.
 +
-[source,sh,role=execute]
+[source, bash]
 ----
 echo 'Hello World!' > backup-file.txt
 cat .\backup-file.txt
@@ -38,6 +38,14 @@ If you receive the following error, wait a few seconds and click on *Create* aga
 ====
 +
 image::backup-backup-error.png[]
-. Once the *Backup a namespace* form is submitted, you will be redirected to the *Backups* landing page. When the status for *backup-1* shows as *Available*, your backup is complete.  This process may take a few minutes.
+. Once the *Backup a namespace* form is submitted, you will be redirected to the *Backups* landing page. Once the *status* shows as *Available*, your backup is complete.
 +
 image::backup-backup-created.png[]
+
+[TIP]
+.Backup Progress
+====
+The backup may take around 10 minutes to complete.  If you would like to monitor progress of the backup, click *Trilio Backups -> Overview* and monitor the *Activity* section for the progress of *backup-1*.
+
+image::backup-backup-progress.png[]
+====
