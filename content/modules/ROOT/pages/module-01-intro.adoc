@@ -35,7 +35,7 @@ In this demo, we will be using a Minio S3 object store to host our backed up fil
 
 As a reminder, here are your credentials for the OpenShift Console:
 
-Your OpenShift cluster console is available https://{openshift_console_url}[here^].
+Your OpenShift cluster console is available {openshift_console_url}[here^].
 
 Console login is available with:
 
