@@ -2,7 +2,7 @@
 
 == Introduction
 
-In this section we will restore just one of the virtual machines using the Trilio UI and we will modify some of its configuration using the *Transfrom* functionality.
+In this section we will restore just one of the virtual machines using the Trilio UI and we will modify some of its configuration using the *Transform* functionality.
 
 == Create the Restore
 
