@@ -76,7 +76,7 @@ When the restore is complete, we will check that the virtual machine has been cr
 
 Notice that the only virtual machine that has been restored is *winweb01*. Click on it and in the *Overview* tab we will see that it has *2* cores and *4GiB* of memory.
 
-image::restored-vm.png[]
+image::../assets/images/restored-vm.png[]
 
 
 You have successfully restored a single virtual machine with different features from the original to a new namespace  using Trilio UI.
