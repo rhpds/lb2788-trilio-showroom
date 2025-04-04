@@ -14,7 +14,7 @@ In this section of the demo, we will attempt to create a Backup Target which wil
 image::target-vmimported-vms.png[]
 +
 There are 3 Virtual Machines that are displayed.
-These will be backed up and restored to another namespace.
+We will be back up and restore one of them to another namespace.
 . Our Target will be set up to store backed up files on a MinIO S3 location.
 
 === Start `winweb01`
