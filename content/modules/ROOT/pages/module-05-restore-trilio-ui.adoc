@@ -51,7 +51,7 @@ image::differences.png[]
 
 image::memory.png[]
 
-. Let's now specify the OS image by clicking again on *Add Another* and typing *machine* in the *Path* field. Type *pc-q35-rhel9.20"* in the *Value* field and click on *Apply*
+. Let's now specify the OS image by clicking again on *Add Another* and typing *machine* in the *Path* field. Type *"pc-q35-rhel9.20"* in the *Value* field and click on *Apply*
 
 image::os-image.png[]
 
@@ -59,11 +59,10 @@ image::os-image.png[]
 
 image::create-restore.png[]
 
- Confirm by clicking on *Create Restore* and the restore will be triggered.
+. Confirm by clicking on *Create Restore* and the restore will be triggered.
 
- image::confirm.png[]
+image::confirm.png[]
 
-[TIP]
 .Restore Progress
 ====
 As we saw in the previous section, the restore takes around 10 minutes to complete and the status will be shown as it progresses. Once it is completed we will see this:
@@ -78,8 +77,8 @@ When the restore is complete, we will check that the virtual machine has been cr
 . Go back to the Red Hat OpenShift console, select the *singlevm-restore* namespace and click on *Virtualization -> VirtualMachines*.
 
 Notice that the only virtual machine that has been restored is *winweb01*. Click on it and in the *Overview* tab we will see that it has *2* cores and *4GiB* of memory.
-+
+
 image::restored-vm.png[]
-+
+
 
 You have successfully restored a single virtual machine with different features from the original to a new namespace  using Trilio UI.
