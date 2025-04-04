@@ -33,7 +33,7 @@ image::module-5-trilio-ui/resources.png[]
 
 image::module-5-trilio-ui/virtual-machine.png[]
 
-* Now we will modify some of the features of the virtual machine to be restored, namely the number of cores, its memory and its OS image.
+* Now we will modify some of the features of the virtual machine to be restored, namely the number of cores, its memory and its machine type.
 Click on *Add Transform Components*, and choose *Virtual Machine*.
 
 image::module-5-trilio-ui/add-transform.png[]
@@ -43,7 +43,7 @@ Type *modify-resources-and-vmtype* in the *Transform Name* field.
 
 image::module-5-trilio-ui/unselect.png[]
 
-* Type *core* in the *Path* field and select that suggested path. Give the value *2*.
+* Type *core* in the *Path* field and select that suggested path. Give the value *4*.
 
 image::module-5-trilio-ui/cores.png[]
 
@@ -55,10 +55,10 @@ image::module-5-trilio-ui/differences.png[]
 
 image::module-5-trilio-ui/memory.png[]
 
-* Let's now specify the OS image by clicking again on *Add Another* and typing *machine* in the *Path* field.
+* Let's now specify the machine type by clicking again on *Add Another* and typing *machine* in the *Path* field.
 Type *"pc-q35-rhel9.20"* in the *Value* field and click on *Apply*
 
-image::module-5-trilio-ui/os-image.png[]
+image::module-5-trilio-ui/machine-type.png[]
 
 * Click on *Add* and then on *Create*.
 
