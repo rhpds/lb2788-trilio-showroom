@@ -64,12 +64,12 @@ image::create-restore.png[]
 image::confirm.png[]
 
 .Restore Progress
-====
+
 As we saw in the previous section, the restore takes around 10 minutes to complete and the status will be shown as it progresses. Once it is completed we will see this:
 
 
 image::restore-complete.png[]
-====
+
 
 == Validating the Restore
 When the restore is complete, we will check that the virtual machine has been created in the new namespace with the resources that we specified.
