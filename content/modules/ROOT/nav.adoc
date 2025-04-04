@@ -4,4 +4,5 @@
 * xref:module-02-target.adoc[Creating a Backup Target]
 * xref:module-03-backup.adoc[Creating a Backup]
 * xref:module-04-restore.adoc[Restoring from a Backup]
-* xref:module-05-conclusion.adoc[Conclusion]
+* xref:module-05-restore-trilio-ui.adoc[Restoring a Backup from the Trilio UI]
+* xref:module-06-conclusion.adoc[Conclusion]
