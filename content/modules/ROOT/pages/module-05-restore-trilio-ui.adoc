@@ -12,7 +12,7 @@ image::../assets/images/trilio-ui.png[]
 
 * On the left menu, click on *Backup & Recovery* and then *Backup Plans* button.
 
-image::../assets/images/backup-plans.io[]
+image::../assets/images/backup-plans.png[]
 
 * Choose the *Restore* option for *backup-1*
 
