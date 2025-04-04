@@ -8,69 +8,69 @@ In this section we will restore just one of the virtual machines using the Trili
 
 Go to the Trilio UI from the Trilio Backups section in the Red Hat OpenShift console and log on using the OpenShift credentials (*admin*).
 
-image::../assets/images/trilio-ui.png[]
+image::module-5-trilio-ui/trilio-ui.png[]
 
 * On the left menu, click on *Backup & Recovery* and then *Backup Plans* button.
 
-image::../assets/images/backup-plans.png[]
+image::module-5-trilio-ui/backup-plans.png[]
 
 * Choose the *Restore* option for *backup-1-{user}*
 
-image::../assets/images/backup-restore.png[]
+image::module-5-trilio-ui/backup-restore.png[]
 
 * For *Name* enter *restore-1vm-{user}*.
 We will create a new namespace to restore to, so select *New Namespace* and call it *singlevm-restore-{user}*.
 Once created click on *Next*.
 
-image::../assets/images/new-namespace.png[]
+image::module-5-trilio-ui/new-namespace.png[]
 
 * Now we will specify the virtual machine that we want to restore.
 Click on *Add Resources*, expand the *Resources* tab and select *Virtual Machine*
 
-image::../assets/images/resources.png[]
+image::module-5-trilio-ui/resources.png[]
 
 * Click on the *SpecificObject* tab, select the *winweb01* virtual machine and click on *Apply*, then *Add* and then *Next*.
 
-image::../assets/images/virtual-machine.png[]
+image::module-5-trilio-ui/virtual-machine.png[]
 
 * Now we will modify some of the features of the virtual machine to be restored, namely the number of cores, its memory and its OS image.
 Click on *Add Transform Components*, and choose *Virtual Machine*.
 
-image::../assets/images/add-transform.png[]
+image::module-5-trilio-ui/add-transform.png[]
 
 * Since we are going to apply the transform to *winweb01* only, we can delete the other two virtual machines from the list.
 Type *modify-resources-and-vmtype* in the *Transform Name* field.
 
-image::../assets/images/unselect.png[]
+image::module-5-trilio-ui/unselect.png[]
 
 * Type *core* in the *Path* field and select that suggested path. Give the value *2*.
 
-image::../assets/images/cores.png[]
+image::module-5-trilio-ui/cores.png[]
 
 * We can click on *Preview Changes* to see the differences that the transform will introduce in the YAML file for the virtual machine.
 
-image::../assets/images/differences.png[]
+image::module-5-trilio-ui/differences.png[]
 
 * In order to specify the amount of memory for the restored virtual machine, click on *Add Another*, type *memory* in the *Path* field, accept the suggested path and type *"4Gi"* in the *Value* field.
 
-image::../assets/images/memory.png[]
+image::module-5-trilio-ui/memory.png[]
 
 * Let's now specify the OS image by clicking again on *Add Another* and typing *machine* in the *Path* field.
 Type *"pc-q35-rhel9.20"* in the *Value* field and click on *Apply*
 
-image::../assets/images/os-image.png[]
+image::module-5-trilio-ui/os-image.png[]
 
 * Click on *Add* and then on *Create*.
 
-image::../assets/images/create-restore.png[]
+image::module-5-trilio-ui/create-restore.png[]
 
 * Confirm by clicking on *Create Restore* and the restore will be triggered.
 
-image::../assets/images/confirm.png[]
+image::module-5-trilio-ui/confirm.png[]
 
 As we saw in the previous section, the restore takes around 10 minutes to complete and the status will be shown as it progresses. Once it is completed we will see this:
 
-image::../assets/images/restore-complete.png[]
+image::module-5-trilio-ui/restore-complete.png[]
 
 == Validating the Restore
 
@@ -81,6 +81,6 @@ When the restore is complete, we will check that the virtual machine has been cr
 Notice that the only virtual machine that has been restored is *winweb01*.
 Click on it and in the *Overview* tab we will see that it has *2* cores and *4GiB* of memory.
 
-image::../assets/images/restored-vm.png[]
+image::module-5-trilio-ui/restored-vm.png[]
 
 You have successfully restored a single virtual machine with different features from the original to a new namespace using Trilio UI.

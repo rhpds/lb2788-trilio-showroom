@@ -10,6 +10,9 @@ asciidoc:
     lab_name: Backup and Restore for Red Hat OpenShift Virtualization with Trilio
     release-version: master
     page-pagination: true
+    user: dr-admin1-sample
+    password: dr-admin1-sample
+    openshift_console_url: https://console-openshift-console.apps-crc.testing
   page-links:
   - url: https://redhat.com
     text: Red Hat
