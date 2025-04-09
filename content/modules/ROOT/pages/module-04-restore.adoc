@@ -8,7 +8,7 @@ A Trilio Restore is a Kubernetes resource that restores a backup in the same or 
 To restore a backup into a new namespace:
 
 . On the left menu, click on *Home -> Projects* and click the *Create Project* button.
-. For *Name* enter *vmrestored*-{user} and click *Create*
+. For *Name* enter *vmrestored-{user}* and click *Create*
 . On the left menu, click on *Trilio Backups -> Restores* and ensure the project is selected as *vmrestored*
 . Click on the *Create Restore* button
 . On the *Restore a backup* form, select *backup-1-{user}* from the list and click *Next*

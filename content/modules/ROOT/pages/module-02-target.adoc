@@ -40,10 +40,10 @@ In order for Trilio to upload the files to this location, it will require login 
 == Create the Backup Target
 Now that you have the credentials to your target location, you can begin creating the Backup Target.
 
-. On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *vmimported*.
+. On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *vmimported-{user}*.
 . Click the *Create Target* button. You will be presented with a *Create Target* form.
 +
-image::target-create-target-form.png[]
+image::target.png[]
 . For *Namespace*, select *vmimported-{user}*
 . For *Name*, enter *target-1-{user}*
 . Ignore the *Threshold Capacity* as this is not required for the demo.
