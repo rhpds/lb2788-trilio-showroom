@@ -7,7 +7,7 @@ Welcome to Protecting VMs in Red Hat OpenShift Virtualization with Trilio
 This demo is organized to allow you to have a hands-on experience with Backup and Restore using Trilio for Red Hat OpenShift Virtualization.
 
 Trilio is a leader in cloud-native data protection for Kubernetes, KubeVirt, and OpenStack environments.
-Trilio technology is trusted by cloud infrastructure operators, the largest telco providers, and developers for backup and recovery, migration and application mobility.
+Trilio technology is trusted by cloud infrastructure operators, the largest telco providers, and developers for backup and recovery, migration, and application mobility.
 
 Customers in telecom, defense, automotive, and financial services leverage Trilio to recover from disasters, migrate workloads, move workloads to new infrastructure, and migrate to new software distributions.
 
