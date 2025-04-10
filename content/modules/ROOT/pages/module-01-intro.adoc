@@ -2,9 +2,9 @@
 
 == Introduction
 
-Trilio for Red Hat OpenShift provides fast and easy backup of application containers and virtual machines, disaster and ransomware recovery and application mobility across any cluster, anywhere.
-Trilio gives you the power and flexibility to backup your entire cluster or select a specific namespace(s), label, Helm chart, or Operator as the scope for your backup operations, while minimizing resources consumption by utilizing Incremental Backups, selective workload recovery and more.
-Trilio’s solution allows users to seamlessly backup & recover, upgrade, and migrate workloads, while providing real-time reporting for SLA-based service continuity and Operational Resiliency.
+Trilio for Red Hat OpenShift provides fast and easy backup of application containers and virtual machines, disaster and ransomware recovery, and application mobility across any cluster, anywhere.
+Trilio gives you the power and flexibility to back up your entire cluster or select a specific namespace(s), label, Helm chart, or Operator as the scope for your backup operations while minimizing resource consumption by utilizing Incremental Backups, selective workload recovery, and more.
+Trilio’s solution allows users to seamlessly back up & recover, upgrade, and migrate workloads while providing real-time reporting for SLA-based service continuity and Operational Resiliency.
 
 image::intro-trilio-arch.png[]
 
@@ -19,7 +19,7 @@ Trilio has been enhanced for Red Hat OpenShift environments:
 
 === Disaster Recovery thru Continuous Recovery & Restore
 
-Trilio’s Continuous Recovery & Restore capability enables fast data recovery, migration and replication of stateful applications in seconds or minutes so that all organizations can protect and use their data anywhere – regardless of what the application runs on or where the data is stored.
+Trilio’s Continuous Recovery & Restore capability enables fast data recovery, migration, and replication of stateful applications in seconds or minutes so that all organizations can protect and use their data anywhere – regardless of what the application runs on or where the data is stored.
 This innovation enables data-driven organizations to access ‘Single-Source-of-Truth’ data from multiple heterogeneous clouds simultaneously, from any cloud or storage platform to another, providing near-instantaneous recovery times for your workloads.
 
 * Shorten RTO
@@ -29,8 +29,8 @@ This innovation enables data-driven organizations to access ‘Single-Source-of-
 
 === Target Browsing and Restore Flexibility
 
-Enables browsing and restoring backups across different clusters, simplifying disaster recovery, application migration, efficient testing and development, consolidated backup storage and unified backup management (single pane of glass).
-Browse backups from multiple sources, and restore to any cluster.
+Enables browsing and restoring backups across different clusters, simplifying disaster recovery, application migration, efficient testing and development, consolidated backup storage, and unified backup management (single pane of glass).
+Browse backups from multiple sources and restore to any cluster.
 
 .*Goals*
 
@@ -39,8 +39,8 @@ Browse backups from multiple sources, and restore to any cluster.
 * Creating a Restore
 * Engage the Trilio UI
 
-In this demo, you will be using a Minio S3 object store to host our backed up files.
-We also have provisioned a namespace *vmimported-{user}* that contains three VirtualMachines i.e. database, winweb01 and winweb02 which we will attempt to backup and restore.
+In this workshop, you will be using a Minio S3 object store to host our backed-up files.
+We also have provisioned a namespace *vmimported-{user}* that contains three VirtualMachines, i.e., database, winweb01, and winweb02, which we will attempt to back up and restore.
 
 As a reminder, here are your credentials for the OpenShift Console:
 
@@ -54,10 +54,10 @@ Console login is available with:
 [IMPORTANT]
 .Trilio Openshift Operator
 ====
-The Trilio OpenShift Operator as well as any required RBAC resources have been installed on your cluster.
+The Trilio OpenShift Operator, as well as any required RBAC resources, has been installed on your cluster.
 This demonstration is focused on the backup and restore capabilities only.
 
-For information relating to the installation of Trilio, please refer the the following documentation:
+For information relating to the installation of Trilio, please refer the following documentation:
 
 * https://docs.trilio.io/kubernetes/getting-started/red-hat-openshift[Getting Started with Trilio on Red Hat OpenShift (OCP)^]
 
