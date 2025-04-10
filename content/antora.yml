@@ -13,6 +13,7 @@ asciidoc:
     user: dr-admin1-sample
     password: dr-admin1-sample
     openshift_console_url: https://console-openshift-console.apps-crc.testing
+    vms_namespace: originalvms
   page-links:
   - url: https://redhat.com
     text: Red Hat

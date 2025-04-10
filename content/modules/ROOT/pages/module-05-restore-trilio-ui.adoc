@@ -18,7 +18,7 @@ image::module-5-trilio-ui/trilio-ui.png[]
 
 image::module-5-trilio-ui/backup-plans.png[]
 
-* Choose the *Restore* option for *vmimported-{user}-backuplan*
+* Choose the *Restore* option for *{vms_namespace}-{user}-backuplan*
 
 image::module-5-trilio-ui/backup-restore.png[]
 

@@ -4,12 +4,12 @@
 
 A Trilio Target is a Kubernetes resource that defines the backup repository location used to store the backup files.
 This location can be defined as an *Network File System (NFS)* or an *Object Store* such AWS, MinIO etc.
-In this section of the demo, we will attempt to create a Backup Target which will host all backup files for the *vmimported-{user}* namespace.
+In this section of the demo, we will attempt to create a Backup Target which will host all backup files for the *{vms_namespace}-{user}* namespace.
 
 == Virtual Machines
 
 . Login to your {openshift_console_url}[OpenShift Console^] with user *{user}* and password *{password}*.
-. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, select the project *vmimported-{user}*
+. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drown down, select the project *{vms_namespace}-{user}*
 +
 image::target-vmimported-vms.png[]
 +
@@ -27,7 +27,7 @@ We will be modifying the files on this VM, so we will start it now to save time 
 
 In order for Trilio to upload the files to this location, it will require login credentials, created as a Kubernetes secret, in the namespace we are trying to backup:
 
-. On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *vmimported-{user}*.
+. On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *{vms_namespace}-{user}*.
 . Click on the *Create* button and select *Key/value secret*
 . For *Secret name* enter *minio-s3-login*
 . For *Key* enter *accessKey*
@@ -40,16 +40,16 @@ In order for Trilio to upload the files to this location, it will require login 
 == Create the Backup Target
 Now that you have the credentials to your target location, you can begin creating the Backup Target.
 
-. On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *vmimported-{user}*.
+. On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *{vms_namespace}-{user}*.
 . Click the *Create Target* button. You will be presented with a *Create Target* form.
 +
 image::target.png[]
-. For *Namespace*, select *vmimported-{user}*
+. For *Namespace*, select *{vms_namespace}-{user}*
 . For *Name*, enter *target-1-{user}*
 . Ignore the *Threshold Capacity* as this is not required for the demo.
 . For *Vendor details*, select *Object Store*
 . For *Vendor*, select *MinIO*
-. For *Secrets*, look for your namespace *vmimported-{user}* and select *minio-s3-login* which you just created.
+. For *Secrets*, look for your namespace *{vms_namespace}-{user}* and select *minio-s3-login* which you just created.
 . For *Bucket Name*, enter *s3-{user}*.
 This bucket has already been created for you on MinIO.
 . Ignore *Region*

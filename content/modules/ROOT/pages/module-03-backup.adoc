@@ -12,7 +12,7 @@ Trilio makes it easy to automatically create your backup plans and all required 
 Before we create a backup, we want to ensure that our backup is storing our latest files in the target.
 To ensure this is being done, we will create a file on one of the virtual machines to validate the backup.
 
-. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *vmimported-{user}* is selected.
+. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *{vms_namespace}-{user}* is selected.
 . Click on *winweb01*
 . Click on the *console* tab
 . On the VNC console, enter *15* and hit *enter*
@@ -30,7 +30,7 @@ cat .\backup-file.txt
 == Create the Backup
 
 . On the left menu, click on *Trilio Backups -> Backups* and click the *Create Backup* button
-. On the *Backup a namespace* form, enter *vmimported-{user}* in the *Search by name...* field and ensure it is selected. Click *Next*
+. On the *Backup a namespace* form, enter *{vms_namespace}-{user}* in the *Search by name...* field and ensure it is selected. Click *Next*
 . For *Target*, select *target-1-{user}*.
 For more information on how to create a *Backup Schedule* or *Retention Schedule*, refer to this link https://docs.trilio.io/kubernetes/getting-started/red-hat-openshift#about-backup-plans-and-backups[About Backup Plans and Backups].
 . Click *Next*
