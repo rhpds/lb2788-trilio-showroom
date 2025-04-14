@@ -11,7 +11,7 @@ asciidoc:
     release-version: master
     page-pagination: true
     user: dr-admin1-sample
-    password: dr-admin1-sample
+    password: common-password
     openshift_console_url: https://console-openshift-console.apps-crc.testing
     vms_namespace: originalvms
   page-links:
