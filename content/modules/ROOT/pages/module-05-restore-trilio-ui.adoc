@@ -10,7 +10,7 @@ Make sure you are on the *Administrator* view on the OpenShift Console.
 
 image::module-5-trilio-ui/admin.png[]
 
-Go to the Trilio UI from the Trilio Backups section in the Red Hat OpenShift console and log on using the OpenShift credentials (*admin*).
+Go to the Trilio UI from the Trilio Backups section in the Red Hat OpenShift console and log on using the OpenShift credentials (*{user}*).
 
 image::module-5-trilio-ui/trilio-ui.png[]
 
