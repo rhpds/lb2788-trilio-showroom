@@ -3,7 +3,7 @@
 == Introduction
 
 A Trilio Target is a Kubernetes resource that defines the backup repository location used to store the backup files.
-This location can be defined as an *Network File System (NFS)* or an *Object Store* such AWS, MinIO etc.
+This location can be defined as an *Network File System (NFS)* or an *Object Store* such AWS, MinIO, etc.
 In this section of the demo, we will attempt to create a Backup Target which will host all backup files for the *{vms_namespace}-{user}* namespace.
 
 == Virtual Machines
@@ -14,11 +14,11 @@ In this section of the demo, we will attempt to create a Backup Target which wil
 image::target-vmimported-vms.png[]
 +
 We will be back up and restore the virtual machine shown, *winweb01*.
-. Our Target will be set up to store backed up files on a MinIO S3 location.
+. Our Target will be set up to store backed-up files on a MinIO S3 location.
 
 == Create the S3 Credentials Secret for the Backup Target
 
-In order for Trilio to upload the files to this location, it will require login credentials, created as a Kubernetes secret, in the namespace we are trying to backup:
+For Trilio to upload the files to this location, it will require login credentials, created as a Kubernetes secret, in the namespace we are trying to backup:
 
 . On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *{vms_namespace}-{user}*.
 . Click on the *Create* button and select *Key/value secret*
@@ -33,7 +33,7 @@ In order for Trilio to upload the files to this location, it will require login 
 == Create the Backup Target
 Now that you have the credentials to your target location, you can begin creating the Backup Target.
 
-. On the left menu click *Trilio Backups -> Targets* and ensure your Project is selected as *{vms_namespace}-{user}*.
+. On the left menu, click *Trilio Backups -> Targets* and ensure your Project is selected as *{vms_namespace}-{user}*.
 . Click the *Create Target* button. You will be presented with a *Create Target* form.
 +
 image::target.png[]
