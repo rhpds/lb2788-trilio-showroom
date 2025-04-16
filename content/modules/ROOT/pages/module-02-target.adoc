@@ -13,7 +13,7 @@ In this section of the demo, we will attempt to create a Backup Target which wil
 +
 image::target-vmimported-vms.png[]
 +
-We will be back up and restore the virtual machine shown, *winwebo1*.
+We will be back up and restore the virtual machine shown, *winweb01*.
 . Our Target will be set up to store backed up files on a MinIO S3 location.
 
 == Create the S3 Credentials Secret for the Backup Target
