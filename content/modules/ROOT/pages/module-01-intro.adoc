@@ -40,7 +40,7 @@ Browse backups from multiple sources, and restore to any cluster.
 * Engage the Trilio UI
 
 In this demo, you will be using a Minio S3 object store to host our backed up files.
-We also have provisioned a namespace *{vms_namespace}-{user}* that contains three VirtualMachines i.e. database, winweb01 and winweb02 which we will attempt to backup and restore.
+We also have provisioned a namespace *{vms_namespace}-{user}* that contains a Virtual Machine, winweb01, which we will attempt to backup and restore.
 
 As a reminder, here are your credentials for the OpenShift Console:
 
