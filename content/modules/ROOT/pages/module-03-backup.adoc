@@ -9,7 +9,7 @@ Trilio makes it easy to automatically create your backup plans and all required 
 
 == Backup Validation
 
-Before we create a backup, we want to ensure that our backup is storing our latest files in the target.
+Before creating a backup, we want to ensure that our backup is storing our latest files in the target.
 To ensure this is being done, we will create a file on one of the virtual machines to validate the backup.
 
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *{vms_namespace}-{user}* is selected.
