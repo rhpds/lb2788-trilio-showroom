@@ -33,7 +33,7 @@ image::restore-restore-progress.png[]
 When the restore is complete, we want to ensure that our restore contains all the files we persisted in the backup.
 
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *vmrestored-{user}* is selected.
-. Notice that the virtual machine have been restored in your new OpenShift Project.
+. Notice that the virtual machine has been restored in your new OpenShift Project.
 +
 image::restore-vm-running.png[]
 +
