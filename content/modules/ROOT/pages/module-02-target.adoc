@@ -13,15 +13,8 @@ In this section of the demo, we will attempt to create a Backup Target which wil
 +
 image::target-vmimported-vms.png[]
 +
-There are 3 Virtual Machines that are displayed.
-We will be back up and restore one of them to another namespace.
+We will be back up and restore the virtual machine shown, *winwebo1*.
 . Our Target will be set up to store backed up files on a MinIO S3 location.
-
-=== Start `winweb01`
-
-We will be modifying the files on this VM, so we will start it now to save time in the next module.
-
-. Click the *Start button* next to *winweb01*.
 
 == Create the S3 Credentials Secret for the Backup Target
 
