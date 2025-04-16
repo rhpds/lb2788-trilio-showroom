@@ -2,7 +2,7 @@
 
 == Introduction
 
-In this section we will restore just one of the virtual machines using the Trilio UI and we will modify some of its configuration using the *Transform* functionality.
+In this section, we will restore the virtual machine using the Trilio UI, and we will modify some of its configuration using the *Transform* functionality.
 
 == Create the Restore
 
@@ -24,7 +24,7 @@ image::module-5-trilio-ui/backup-restore.png[]
 
 * For *Name* enter *restore-1vm-{user}*.
 We will create a new namespace to restore to, so select *New Namespace* and call it *singlevm-restore-{user}*.
-Once created click on *Next*.
+Once created, click on *Next*.
 
 image::module-5-trilio-ui/new-namespace.png[]
 
@@ -51,11 +51,11 @@ image::module-5-trilio-ui/unselect.png[]
 
 image::module-5-trilio-ui/cores.png[]
 
-* We can click on *Preview Changes* to see the differences that the transform will introduce in the YAML file for the virtual machine.
+* We can click on *Preview Changes* to see the differences the transform will introduce in the YAML file for the virtual machine.
 
 image::module-5-trilio-ui/differences.png[]
 
-* In order to specify the amount of memory for the restored virtual machine, click on *Add Another*, type *memory* in the *Path* field, accept the suggested path and type *"4Gi"* in the *Value* field.
+* To specify the amount of memory for the restored virtual machine, click on *Add Another*, type *memory* in the *Path* field, accept the suggested path and type *"4Gi"* in the *Value* field.
 
 image::module-5-trilio-ui/memory.png[]
 
@@ -68,11 +68,11 @@ image::module-5-trilio-ui/machine-type.png[]
 
 image::module-5-trilio-ui/create-restore.png[]
 
-* Confirm by clicking on *Create Restore* and the restore will be triggered.
+* Confirm by clicking on *Create Restore*, and the restore will be triggered.
 
 image::module-5-trilio-ui/confirm.png[]
 
-As we saw in the previous section, the restore takes around 10 minutes to complete and the status will be shown as it progresses. Once it is completed we will see this:
+As we saw in the previous section, the restore takes around 10 minutes to complete, and the status will be shown as it progresses. Once it is completed, we will see this:
 
 image::module-5-trilio-ui/restore-complete.png[]
 
@@ -83,7 +83,7 @@ When the restore is complete, we will check that the virtual machine has been cr
 * Go back to the Red Hat OpenShift console, select the *singlevm-restore-{user}* namespace and click on *Virtualization -> VirtualMachines*.
 
 Notice that the only virtual machine that has been restored is *winweb01*.
-Click on it and in the *Overview* tab we will see that it has *2* cores and *4GiB* of memory.
+Click on it and in the *Overview* tab, we will see that it has *2* cores and *4GiB* of memory.
 
 image::module-5-trilio-ui/restored-vm.png[]
 
