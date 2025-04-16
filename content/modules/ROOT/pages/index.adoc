@@ -4,19 +4,19 @@ Welcome to Protecting VMs in Red Hat OpenShift Virtualization with Trilio
 
 == Introduction
 
-This demo is organized to allow you to have a hands-on experience with Backup and Restore using Trilio for Red Hat OpenShift Virtualization.
+This lab is organized to allow you to have a hands-on experience with Backup and Restore using Trilio for Red Hat OpenShift Virtualization.
 
 Trilio is a leader in cloud-native data protection for Kubernetes, KubeVirt and OpenStack environments.
 Trilio technology is trusted by cloud infrastructure operators, the largest telco providers, and developers for backup and recovery, migration and application mobility.
 
-Customers in telecom, defense, automotive and financial services leverage Trilio to recover from disasters, migrate workloads, move workloads to new infrastructure and migrate to new software distributions.
+Customers in telecom, defense, automotive and financial services leverage Trilio to recover from disasters, migrate workloads and move workloads to new infrastructure.
 
-In this demo we will explore many common management activities that virtual administrators often encounter in their day to day workflows.
+In this demo we will explore many common management activities that virtualization administrators often encounter in their day to day activities.
 
 == Intended Audience
 
 *Virtual Machine Administrators* -- Those responsible for day to day management of virtual guests in OpenShift Virtualization.
-These users will often find themselves responsible for backup up and restoring virtual guests and the applications running within.
+These users will often find themselves responsible for backing up and restoring virtual guests and the applications running within.
 
 *Virtual Infrastructure Administrators* -- Those responsible for the physical infrastructure hosting the Backup targets.
 These users will be responsible for physical hardware, storage, and networking changes to the environment, that will ensure the successful restoration of virtual machine resources.
