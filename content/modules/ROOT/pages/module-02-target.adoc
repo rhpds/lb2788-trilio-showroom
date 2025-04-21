@@ -20,7 +20,7 @@ We will be back up and restore the virtual machine shown, *winweb01*.
 
 For Trilio to upload the files to this location, it will require login credentials, created as a Kubernetes secret, in the namespace we are trying to backup:
 
-. On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *{vms_namespace}-{user}*.
+. On the left menu, select *Workloads -> Secrets* and ensure your Project is selected as *{vms_namespace}*.
 . Click on the *Create* button and select *Key/value secret*
 . For *Secret name* enter *minio-s3-login*
 . For *Key* enter *accessKey*
@@ -33,23 +33,23 @@ For Trilio to upload the files to this location, it will require login credentia
 == Create the Backup Target
 Now that you have the credentials to your target location, you can begin creating the Backup Target.
 
-. On the left menu, click *Trilio Backups -> Targets* and ensure your Project is selected as *{vms_namespace}-{user}*.
+. On the left menu, click *Trilio Backups -> Targets* and ensure your Project is selected as *{vms_namespace}*.
 . Click the *Create Target* button. You will be presented with a *Create Target* form.
 +
 image::target.png[]
-. For *Namespace*, select *{vms_namespace}-{user}*
-. For *Name*, enter *target-1-{user}*
+. For *Namespace*, select *{vms_namespace}*
+. For *Name*, enter *target-1*
 . Ignore the *Threshold Capacity* as this is not required for the demo.
 . For *Vendor details*, select *Object Store*
 . For *Vendor*, select *MinIO*
-. For *Secrets*, look for your namespace *{vms_namespace}-{user}* and select *minio-s3-login* which you just created.
-. For *Bucket Name*, enter *s3-{user}*.
+. For *Secrets*, look for your namespace *{vms_namespace}* and select *minio-s3-login* which you just created.
+. For *Bucket Name*, enter *trilio-storage*.
 This bucket has already been created for you on MinIO.
 . Ignore *Region*
 . For *URL*, enter *http://minio.minio.svc.cluster.local:9000*
 . Click *Submit*
 . Once the *Create Target* form is submitted, you will be redirected to the *Targets* landing page.
-Once the status for *target-1-{user}* shows *Available*, your target is successfully created.
+Once the status for *target-1* shows *Available*, your target is successfully created.
 +
 image::target-target-created.png[]
 

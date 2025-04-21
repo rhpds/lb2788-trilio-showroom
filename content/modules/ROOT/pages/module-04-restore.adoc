@@ -8,14 +8,14 @@ A Trilio Restore is a Kubernetes resource that restores a backup in the same or 
 To restore a backup into a new namespace:
 
 . On the left menu, click on *Home -> Projects* and click the *Create Project* button.
-. For *Name* enter *vmrestored-{user}* and click *Create*
+. For *Name* enter *vmrestored* and click *Create*
 . On the left menu, click on *Trilio Backups -> Restores* and ensure the project is selected as *vmrestored*
 . Click on the *Create Restore* button
-. On the *Restore a backup* form, select *backup-1-{user}* from the list and click *Next*
-. Enter *vmrestored-{user}* in the *Search by name...* field and ensure it is selected and click *Next*
-. For *Restore Name* enter *restore-1-{user}* and click *Create*
+. On the *Restore a backup* form, select *backup-1* from the list and click *Next*
+. Enter *vmrestored* in the *Search by name...* field and ensure it is selected and click *Next*
+. For *Restore Name* enter *restore-1* and click *Create*
 . Once the *Restore a backup* form is submitted, you will be redirected to the *Restores* landing page.
-When the status for *restore-1-{user}* shows as *Completed*, your restore is complete.
+When the status for *restore-1* shows as *Completed*, your restore is complete.
 This process may take a few minutes.
 +
 image::restore-restore-complete.png[]
@@ -24,7 +24,7 @@ image::restore-restore-complete.png[]
 .Restore Progress
 ====
 The restore may take around 10 minutes to complete.
-If you would like to monitor the progress of the restore, click *Trilio Backups -> Overview* and monitor the *Activity* section for the progress of *restore-1-{user}*.
+If you would like to monitor the progress of the restore, click *Trilio Backups -> Overview* and monitor the *Activity* section for the progress of *restore-1*.
 
 image::restore-restore-progress.png[]
 ====
@@ -32,7 +32,7 @@ image::restore-restore-progress.png[]
 == Validating the Restore
 When the restore is complete, we want to ensure that our restore contains all the files we persisted in the backup.
 
-. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *vmrestored-{user}* is selected.
+. On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *vmrestored* is selected.
 . Notice that the virtual machine has been restored in your new OpenShift Project.
 +
 image::restore-vm-running.png[]

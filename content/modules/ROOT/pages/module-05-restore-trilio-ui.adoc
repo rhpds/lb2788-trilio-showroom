@@ -18,12 +18,12 @@ image::module-5-trilio-ui/trilio-ui.png[]
 
 image::module-5-trilio-ui/backup-plans.png[]
 
-* Choose the *Restore* option for *{vms_namespace}-{user}-backuplan*
+* Choose the *Restore* option for *{vms_namespace}-backuplan*
 
 image::module-5-trilio-ui/backup-restore.png[]
 
-* For *Name* enter *restore-1vm-{user}*.
-We will create a new namespace to restore to, so select *New Namespace* and call it *singlevm-restore-{user}*.
+* For *Name* enter *restore-1vm*.
+We will create a new namespace to restore to, so select *New Namespace* and call it *singlevm-restore*.
 Once created, click on *Next*.
 
 image::module-5-trilio-ui/new-namespace.png[]
@@ -80,7 +80,7 @@ image::module-5-trilio-ui/restore-complete.png[]
 
 When the restore is complete, we will check that the virtual machine has been created in the new namespace with the resources that we specified.
 
-* Go back to the Red Hat OpenShift console, select the *singlevm-restore-{user}* namespace and click on *Virtualization -> VirtualMachines*.
+* Go back to the Red Hat OpenShift console, select the *singlevm-restore* namespace and click on *Virtualization -> VirtualMachines*.
 
 Notice that the only virtual machine that has been restored is *winweb01*.
 Click on it and in the *Overview* tab, we will see that it has *2* cores and *4GiB* of memory.
