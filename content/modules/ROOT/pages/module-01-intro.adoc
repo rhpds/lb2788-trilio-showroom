@@ -1,4 +1,4 @@
-= Backup and Recovery of Red Hat OpenShift Virtualization VMs using Trilio
+= Backup and recovery of Red Hat OpenShift Virtualization VMs using Trilio
 
 == Introduction
 
@@ -8,7 +8,7 @@ Trilio’s solution allows users to seamlessly backup & recover, upgrade, and mi
 
 image::intro-trilio-arch.png[]
 
-=== Integrated Data Protection for OpenShift
+=== Integrated data protection for OpenShift
 
 Trilio has been enhanced for Red Hat OpenShift environments:
 
@@ -17,7 +17,7 @@ Trilio has been enhanced for Red Hat OpenShift environments:
 * Red Hat Advanced Cluster Management Policies
 * Red Hat Ansible Certified Collection for Trilio automated management.
 
-=== Disaster Recovery through Continuous Recovery & Restore
+=== Disaster recovery through Continuous Recovery & Restore
 
 Trilio’s Continuous Recovery & Restore capability enables fast data recovery, migration and replication of stateful applications in seconds or minutes so that all organizations can protect and use their data anywhere, regardless of what the application runs on or where the data is stored.
 This innovation enables data-driven organizations to access ‘Single-Source-of-Truth’ data from multiple heterogeneous clouds simultaneously, from any cloud or storage platform to another, providing near-instantaneous recovery times for your workloads:
@@ -27,7 +27,7 @@ This innovation enables data-driven organizations to access ‘Single-Source-of-
 * Recover and Move Applications
 * Curate Data from Edge Environments
 
-=== Target Browsing and Restore Flexibility
+=== Target browsing and restore flexibility
 
 Enables browsing and restoring backups across different clusters, simplifying disaster recovery, application migration, efficient testing and development, consolidated backup storage and unified backup management (single pane of glass).
 Browse backups from multiple sources, and restore to any cluster.
