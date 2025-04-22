@@ -13,15 +13,15 @@ Customers in telecom, defense, automotive and financial services leverage Trilio
 
 In this demo, we will explore many common management activities that virtualization administrators often encounter in their day-to-day activities.
 
-== Intended Audience
+== Intended audience
 
-*Virtual Machine Administrators* -- Those responsible for the day-to-day management of virtual guests in OpenShift Virtualization.
+*Virtual machine administrators* -- Those responsible for the day-to-day management of virtual guests in OpenShift Virtualization.
 These users will often find themselves responsible for backing up and restoring virtual guests and the applications running within.
 
-*Virtual Infrastructure Administrators* -- Those responsible for the physical infrastructure hosting the Backup targets.
+*Virtual infrastructure administrators* -- Those responsible for the physical infrastructure hosting the Backup targets.
 These users will be responsible for physical hardware, storage, and networking changes to the environment, which will ensure the successful restoration of virtual machine resources.
 
-== Content Covered in the Lab
+== Content covered in the lab
 
 These are the *four* main sections that will be covered:
 
@@ -33,7 +33,7 @@ These are the *four* main sections that will be covered:
 
 * _Creating Restores_: In this section, an administrator will learn how to restore a previous backup.
 
-== Version Information
+== Version information
 
 This edition of the Trilio hands-on lab has been developed using the following software versions:
 
