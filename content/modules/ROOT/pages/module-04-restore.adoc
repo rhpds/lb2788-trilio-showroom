@@ -1,10 +1,10 @@
-= Creating a Restore
+= Creating a restore
 
 == Introduction
 
-A Trilio Restore is a Kubernetes resource that restores a backup in the same or different namespace.
+A Trilio Rrestore is a Kubernetes resource that restores a backup in the same or different namespace.
 
-== Create the Restore
+== Create the restore
 To restore a backup into a new namespace:
 
 . On the left menu, click on *Home -> Projects* and click the *Create Project* button.
@@ -21,7 +21,7 @@ This process may take a few minutes.
 image::restore-restore-complete.png[]
 
 [TIP]
-.Restore Progress
+.Restore progress
 ====
 The restore may take around 10 minutes to complete.
 If you would like to monitor the progress of the restore, click *Trilio Backups -> Overview* and monitor the *Activity* section for the progress of *restore-1*.
@@ -29,7 +29,7 @@ If you would like to monitor the progress of the restore, click *Trilio Backups 
 image::restore-restore-progress.png[]
 ====
 
-== Validating the Restore
+== Validating the restore
 When the restore is complete, we want to ensure that our restore contains all the files we persisted in the backup.
 
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* drop-down, ensure the project *vmrestored* is selected.
@@ -41,9 +41,9 @@ image::restore-vm-running.png[]
 . Click on the *console* tab
 . On the VNC console, enter *15* and hit *enter*
 +
-image::backup-vnc-console.png[]
+image::restore-vnc-console.png[]
 +
-. Run the below command to ensure that the file you created previously is available in the restored Virtual Machine.
+. Run the below command to ensure that the file you created previously is available in the restored virtual machine.
 +
 [source,sh,role=execute]
 ----
