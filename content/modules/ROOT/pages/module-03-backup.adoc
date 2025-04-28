@@ -15,13 +15,13 @@ To ensure this is being done, we will create a file on one of the virtual machin
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* dropdown, ensure the project *{vms_namespace}* is selected.
 . Click on *winweb01*
 . Click on the *console* tab
-. On the VNC console, enter *15* and hit *enter*
+. On the VNC console, enter `15` and hit *enter*
 +
 image::backup-vnc-console.png[]
 +
 . Run the below commands to create a file on the virtual machine and verify it has been created.
 +
-[source, bash]
+[source, bash,role="execute"]
 ----
 echo 'Hello World!' > backup-file.txt
 cat .\backup-file.txt
@@ -30,11 +30,11 @@ cat .\backup-file.txt
 == Create the backup
 
 . On the left menu, click on *Trilio Backups -> Backups* and click the *Create Backup* button
-. On the *Backup a namespace* form, enter *{vms_namespace}* in the *Search by name...* field and ensure it is selected. Click *Next*
+. On the *Backup a namespace* form, enter `{vms_namespace}` in the *Search by name...* field and ensure it is selected. Click *Next*
 . For *Target*, select *target-1*.
-For more information on how to create a *Backup Schedule* or *Retention Schedule*, refer to this link https://docs.trilio.io/kubernetes/getting-started/red-hat-openshift#about-backup-plans-and-backups[About Backup Plans and Backups].
+For more information on how to create a *Backup Schedule* or *Retention Schedule*, refer to this link https://docs.trilio.io/kubernetes/getting-started/red-hat-openshift#about-backup-plans-and-backups[About Backup Plans and Backups^].
 . Click *Next*
-. For *Backup Name*, enter *backup-1* and then click *Create*
+. For *Backup Name*, enter `backup-1` and then click *Create*
 +
 [IMPORTANT]
 .Backup error
