@@ -31,6 +31,9 @@ image::module-5-trilio-ui/admin.png[]
 . Go to the Trilio UI from the Trilio Backups section in the Red Hat OpenShift consol. and log on using the OpenShift credentials (*{user}*).
 +
 image::module-5-trilio-ui/access-ui-5.png[]
++
+. Click *Sign in via OpenShift* and enter your OpenShift credentials.
+User name: `{user}` and password: `{password}`
 
 === Create the restore plan
 
