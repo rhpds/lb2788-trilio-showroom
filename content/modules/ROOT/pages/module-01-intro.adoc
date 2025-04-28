@@ -63,5 +63,5 @@ For information relating to the installation of Trilio, please refer to the foll
 
 *References:*
 
-* https://catalog.redhat.com/software/container-stacks/detail/5ec3fa9528834587a6b85c26[Trilio for OpenShift]
+* https://catalog.redhat.com/software/container-stacks/detail/5ec3fa9528834587a6b85c26[Trilio for OpenShift^]
 ====
