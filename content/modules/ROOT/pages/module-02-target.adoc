@@ -6,7 +6,7 @@ A Trilio target is a Kubernetes resource that defines the backup repository loca
 This location can be defined as an *Network File System (NFS)* or an *Object Store* such AWS, MinIO, etc.
 In this section of the demo, we will attempt to create a Backup Target which will host all backup files for the *{vms_namespace}* namespace.
 
-== Virtual machines
+== Start Virtual Machines
 
 . Login to your {openshift_console_url}[OpenShift Console^] with user *{user}* and password *{password}*.
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* dropdown, select the project *{vms_namespace}*
@@ -15,6 +15,9 @@ image::target-vmimported-vms.png[]
 +
 We will back up and restore the virtual machine shown, *winweb01*.
 . Our target will be set up to store the backed up files on a MinIO S3 location.
++
+.
+
 
 == Create the S3 credentials secret for the backup target
 
@@ -24,10 +27,10 @@ For Trilio to upload the files to this location, it will require login credentia
 . Click on the *Create* button and select *Key/value secret*
 . For *Secret name* enter `minio-s3-login`
 . For *Key* enter `accessKey`
-. For *Value* enter `minio` in the text area, not the upload box.
+. For *Value* enter `minio` in the text area, not the Drag and Drop box.
 . Click on *Add key/value*
 . For the second *Key* enter `secretKey`
-. And for the *Value* enter `{password}` in the text area, not the upload box.
+. And for the *Value* enter `{password}` in the text area, not the Drag and Drop box.
 . Click *Create*
 
 == Create the backup target
