@@ -2,7 +2,7 @@
 
 == Introduction
 
-A Trilio Rrestore is a Kubernetes resource that restores a backup in the same or different namespace.
+A Trilio Restore is a Kubernetes resource that restores a backup in the same or different namespace.
 
 == Create the restore
 To restore a backup into a new namespace:
