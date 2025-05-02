@@ -8,7 +8,7 @@ In this section of the demo, we will attempt to create a Backup Target which wil
 
 == Start Virtual Machine
 
-. Log in to your {openshift_console_url}[OpenShift Console^] with user `{user}` and password `{password}`.
+. Log in to your {openshift_console_url}[OpenShift Console^] with user `{user}` and password `{trilio_password}`.
 . On the left menu, click on *Virtualization -> VirtualMachines* and on the *Project* dropdown, select the project *{vms_namespace}*
 +
 image::target-vmimported-vms.png[]
@@ -31,7 +31,7 @@ For Trilio to upload the files to this location, it will require login credentia
 . For *Value* enter `minio` in the text area, not the Drag and Drop box.
 . Click on *Add key/value*
 . For the second *Key* enter `secretKey`
-. And for the *Value* enter `{password}` in the text area, not the Drag and Drop box.
+. And for the *Value* enter `{trilio_password}` in the text area, not the Drag and Drop box.
 . Click *Create*
 
 == Create the backup target

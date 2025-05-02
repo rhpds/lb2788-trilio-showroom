@@ -33,7 +33,7 @@ image::module-5-trilio-ui/admin.png[]
 image::module-5-trilio-ui/access-ui-5.png[]
 +
 . Click *Sign in via OpenShift* and enter your OpenShift credentials.
-User name: `{user}` and password: `{password}`
+User name: `{user}` and password: `{trilio_password}`
 
 === Create the restore plan
 

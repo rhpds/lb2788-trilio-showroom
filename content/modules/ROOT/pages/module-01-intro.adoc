@@ -49,7 +49,7 @@ As a reminder, here are your credentials for the OpenShift Console:
 Console login is available with:
 
 * *User:* {user}
-* *Password:* {password}
+* *Password:* {trilio_password}
 
 [IMPORTANT]
 .Trilio Openshift Operator
