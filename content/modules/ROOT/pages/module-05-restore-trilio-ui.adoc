@@ -28,9 +28,9 @@ ____
 +
 image::module-5-trilio-ui/admin.png[]
 +
-. Go to the Trilio UI from the Trilio Backups section in the Red Hat OpenShift console and log on using the OpenShift credentials (*{user}*).
+. On the upper right corner of the OpenShift UI, you can clich the box of dots to acces the Trilio UI.
 +
-image::module-5-trilio-ui/access-ui-5.png[]
+image::module-5-trilio-ui/access-ui-app.png[]
 +
 . Click *Sign in via OpenShift* and enter your OpenShift credentials.
 User name: `{user}` and password: `{trilio_password}`
