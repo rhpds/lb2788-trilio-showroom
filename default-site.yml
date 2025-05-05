@@ -1,6 +1,6 @@
 ---
 site:
-  title: "Backup and Restore for Red Hat OpenShift Virtualization with Trilio"
+  title: "LB2788 - Backup and Restore for Red Hat OpenShift Virtualization with Trilio"
   start_page: modules::index.adoc
 
 content:
