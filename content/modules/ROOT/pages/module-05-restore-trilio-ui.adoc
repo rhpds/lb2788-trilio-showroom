@@ -8,26 +8,6 @@ In this section, we will restore the virtual machine using the Trilio UI, and we
 
 === Access the Trilio User Interface
 
-.*Light Mode*
-____
-
-Your desktop might be set to "dark mode."
-The Trilio UI does not support dark mode, so you'll need to force your OpenShift console to "light mode."
-To force "light mode," do the following:
-
-. On the OpenShift Console, click on the text *dr-admin1* in the top right corner of the screen and click *User Preferences*.
-+
-image::module-5-trilio-ui/access-ui-2.png[]
-+
-. Click *Theme* and select *Light*.
-+
-image::module-5-trilio-ui/access-ui-3.png[]
-____
-
-. Make sure you are on the *Administrator* view on the OpenShift Console.
-+
-image::module-5-trilio-ui/admin.png[]
-+
 . On the upper right corner of the OpenShift UI, you can clich the box of dots to acces the Trilio UI.
 +
 image::module-5-trilio-ui/access-ui-app.png[]
