@@ -8,7 +8,11 @@ In this section, we will restore the virtual machine using the Trilio UI, and we
 
 === Access the Trilio User Interface
 
-. On the upper right corner of the OpenShift UI, you can clich the box of dots to acces the Trilio UI.
+. Make sure you are on the *Administrator* view on the OpenShift Console.
++
+image::module-5-trilio-ui/admin.png[]
++
+. On the upper right corner of the OpenShift UI, you can click the box of dots to acces the Trilio UI.
 +
 image::module-5-trilio-ui/access-ui-app.png[]
 +

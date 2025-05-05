@@ -73,8 +73,3 @@ image::module-5-trilio-ui/access-ui-2.png[]
 +
 image::module-5-trilio-ui/access-ui-3.png[]
 ____
-
-. Make sure you are on the *Administrator* view on the OpenShift Console.
-+
-image::module-5-trilio-ui/admin.png[]
-+
