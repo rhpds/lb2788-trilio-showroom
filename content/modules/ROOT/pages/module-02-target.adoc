@@ -28,7 +28,7 @@ For Trilio to upload the files to this location, it will require login credentia
 . Click on the *Create* button and select *Key/value secret*
 . For *Secret name* enter `minio-s3-login`
 . For *Key* enter `accessKey`
-. For *Value* enter `minio` in the text area, not the Drag and Drop box.
+. For *Value* enter `minio` in the Drag and Drop box.
 . Click on *Add key/value*
 . For the second *Key* enter `secretKey`
 . And for the *Value* enter `{trilio_password}` in the text area, not the Drag and Drop box.
