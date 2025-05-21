@@ -31,7 +31,7 @@ For Trilio to upload the files to this location, it will require login credentia
 . For *Value* enter `minio` in the Drag and Drop box.
 . Click on *Add key/value*
 . For the second *Key* enter `secretKey`
-. And for the *Value* enter `{trilio_password}` in the text area, not the Drag and Drop box.
+. And for the *Value* enter `{trilio_password}` in the Drag and Drop box.
 . Click *Create*
 
 == Create the backup target
