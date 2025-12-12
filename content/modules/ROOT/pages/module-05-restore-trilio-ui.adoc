@@ -67,7 +67,7 @@ image::module-5-trilio-ui/cores.png[]
 image::module-5-trilio-ui/memory.png[]
 +
 . Specify the machine type by clicking again on *Add Another* and typing `machine` in the *Path* field.
-Type `"pc-q35-rhel9.20"` in the *Value* field and click on *Apply*.
+Type `"pc-q35-rhel9.2.0"` in the *Value* field and click on *Apply*.
 +
 image::module-5-trilio-ui/machine-type.png[]
 +
